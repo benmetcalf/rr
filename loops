@@ -35,3 +35,4 @@ while(speed > 30) {
 }
 speed
 
+# Break statement.  Remember that the break statement is a control statement and when R encounters it the while loop is abandonded 
