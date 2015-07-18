@@ -8,3 +8,56 @@ if(condition) {
 if(num_views > 15) {
   print("You're popular!")
   }
+
+# If staement with an else statement
+if(condition) {
+  expr1
+} else {
+  expr2
+}
+
+# Example of if else statement
+# Control structure for num_views
+if(num_views > 15) {
+  print("You're popular!")
+} else {
+  print("Try to be more visible!")
+  }
+  
+# If else if statement
+if(condition1) {
+  expr1
+} else if(condition2) {
+  expr2
+} else if(condition3) {
+  expr3
+} else {
+  expr4
+}
+
+# If else if statement example
+# Control structure for num_views
+if(num_views > 15) {
+  print("You're popular!")
+} else if (num_views > 10) {
+  print("Your number of views is average") 
+} else {
+  print("Try to be more visible!")
+}
+
+# Concluding example with conditionals
+## Variables related to your last day of recordings
+li <- 15
+fb <- 9
+
+## Code the control-flow construct
+if(li >= 15 & fb >= 15) {
+  sms <- 2*(li+fb)
+} else if(li < 10 & fb < 10) {
+  sms <- 0.5 * sum(li, fb) 
+} else {
+  sms <- li+fb
+}
+
+## Print the resulting sms to the console
+print(sms)
