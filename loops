@@ -1,0 +1,37 @@
+# Basic while loop - be careful not to create infinite loops!
+while(condition) {
+  expr
+}
+
+# Example of a basic while loop - notice that the variable is modified so that loop is not infinite
+## Initialize the speed variable
+speed <- 64
+
+## Code the while loop
+while(speed > 30) {
+  print("Slow down!")
+  speed <- speed - 7
+}
+
+## Print out the speed variable
+speed
+
+# Example of paste() function within a print function and then a more complicated while loop example with if and else statements
+printe(paste("some_text", some_variable)
+
+## Initialize the speed variable
+speed <- 64
+
+## Extend/adapt the while loop
+while(speed > 30) {
+  print(paste("Your speed is",speed))
+  if(speed > 48) {
+    print("Slow down big time!")
+    speed <- speed - 11
+  } else {
+    print("Slow down!")
+    speed <- speed - 6
+  }
+}
+speed
+
