@@ -1,4 +1,4 @@
-# Basic while loop - be careful not to create infinite loops!
+# Basic while loop - make sure your while loop will end at some point, don't make infinite loops!
 while(condition) {
   expr
 }
@@ -36,3 +36,42 @@ while(speed > 30) {
 speed
 
 # Break statement.  Remember that the break statement is a control statement and when R encounters it the while loop is abandonded 
+
+## Initialize the speed variable
+speed <- 88
+
+while(speed > 30) {
+  print(paste("Your speed is",speed))
+  
+ ## Break the while loop when speed exceeds 80
+  
+  if(speed > 80) {
+    break
+  }    
+    else if(speed > 48) {
+      print("Slow down big time!")
+      speed <- speed - 11
+    } else {
+      print("Slow down!")
+      speed <- speed - 6
+  }
+}
+
+# Final problem
+##Code a while loop that:
+##Increments a variable i from 1 to 10 (including 10),
+##At each run prints out the triple of i.
+##Is abandoned if the triple of i is divisible by 8, but still prints out this triple before breaking.
+
+# Answer
+## Initialize i
+i <- 1
+
+## Code the while loop
+while(i <= 10) {
+  print(i * 3)
+  if(i %% 8 == 0) {
+    break
+  }
+  i <- i + 1
+}
