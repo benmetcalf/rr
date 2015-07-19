@@ -1,0 +1,11 @@
+# Next statement skips the next iteration
+my_object <- c("a", "bb", "ccc", "dddd", "eeeee")
+
+
+for(new_variable in my_object) {
+   if(nchar(new_variable) == 3) {
+     next
+  }
+  print(new_variable)
+}
+
