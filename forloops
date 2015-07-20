@@ -9,3 +9,31 @@ for(new_variable in my_object) {
   print(new_variable)
 }
 
+# The following loops are equivalent
+primes <- c(2, 3, 5, 7, 11, 13)
+
+# loop version 1
+for(p in primes) {
+  print(p)
+}
+
+# loop version 2
+for(i in 1:length(primes)) {
+  print(primes[i])
+}
+
+# nested for loop
+for(var1 in seq1) {
+  for(var2 in seq2) {
+    expr
+  }
+}
+
+# Working Code
+# Loop version 1
+for(views in linkedin) {
+  print(views)
+}
+
+# Loop version 2
+for(i in 1:lenght(primes))
