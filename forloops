@@ -37,3 +37,45 @@ for(views in linkedin) {
 
 # Loop version 2
 for(i in 1:lenght(primes))
+
+## Challenge - My Solution
+
+# Pre-defined variables
+rquote <- "R's internals are irrefutably intriguing"
+chars <- strsplit(rquote, split = "")[[1]]
+
+# Your solution here
+rcount <- 0
+
+for(i in 1:length(chars)) {
+  if(chars[i] == "u") {
+    break
+  }
+  if(chars[i] == "R" | chars[i] == "r") {
+   rcount <- rcount + 1
+  } else {
+  next
+  }
+}
+
+# Print the resulting rcount variable to the console
+print(rcount)
+
+## Challenge - their solution
+# Pre-defined variables
+rquote <- "R's internals are irrefutably intriguing"
+chars <- strsplit(rquote, split = "")[[1]]
+
+# Your solution here
+rcount <- 0
+for(char in chars) {
+  if(char == "u" | char == "U") {
+    break
+  }
+  if(char == "r" | char == "R") {
+    rcount <- rcount + 1
+  }
+}
+
+# Print the resulting rcount variable to the console
+rcount
