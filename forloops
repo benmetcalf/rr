@@ -79,3 +79,22 @@ for(char in chars) {
 
 # Print the resulting rcount variable to the console
 rcount
+
+# Solution attempt the next day
+# Your solution here
+rcount <- 0
+
+for(i in 1:length(chars)) {
+  if(chars[i] == "u") {
+    break
+  } else if(chars[i] == "R" | chars[i] == "r") {
+      rcount <- rcount + 1 {
+      else {
+        next
+      }
+    }
+  }
+}
+
+# Print the resulting rcount variable to the console
+print(rcount)
